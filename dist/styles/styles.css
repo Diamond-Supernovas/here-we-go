@@ -173,7 +173,7 @@ article {
   padding: 10px;
   margin-bottom: 2%;
   height: 300px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 [class^='item-'] {
@@ -188,13 +188,21 @@ article {
   border: 1px solid red;
 }
 
-div.tile-hotel {
+div.tile-hotel,
+div.tile-car-rental {
   float: left;
   margin-right: 2%;
 }
 
-div.tile-flight {
+div.tile-flight,
+div.tile-activity {
   float: right;
+}
+
+.tt-open {
+  background-color: #fff;
+  border: 1px solid #999;
+  margin-left: 2px;
 }
 
 /*div.tile-hotel:nth-child(even) {
@@ -206,6 +214,12 @@ div.tile-hotel:nth-child(odd) {
   margin-right: 5%;
 }*/
 
+.tt-open {
+  border: 1px solid #999;
+  background-color: #fff;
+  padding-left: 2px;
+}
+
 /* ITINERARY VIEW ========================================================== */
 .tile-itinerary {
   border: 1px solid #999;
@@ -214,6 +228,52 @@ div.tile-hotel:nth-child(odd) {
   float: left;
   width: 22%;
   margin-right: 1%
+}
+
+/* BUDGET FORM VIEW ======================================================== */
+.container-form-budget {
+  border: 1px solid #999;
+  padding: 20px;
+}
+
+.form-budget {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-budget ul {
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.form-budget li {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 50%;
+}
+
+.form-budget li.field-full {
+  width: 100%;
+  text-align: center;
+}
+
+.form-budget label,
+.form-budget input {
+  display: block;
+  width: 100%;
+}
+
+.form-budget .form-body input {
+  width: 95%;
+}
+
+.form-budget button {
+  border-radius: 5px;
 }
 
 
